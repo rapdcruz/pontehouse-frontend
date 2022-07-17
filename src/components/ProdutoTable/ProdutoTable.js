@@ -10,7 +10,7 @@ const ProdutoTableModeList = "ProdutoTableModeList";
 const ProdutoTableModeManage = "ProdutoTableModeManage";
 const ProdutoTableModeDashboard = "ProdutoTableModeDashboard";
 
-const ProdutoTable = ({ mode }) => {
+const ProdutoTable = ({ mode, title="Produtos" }) => {
 
     const [produtos, setProdutos] = useState([]);
     const [alert, setAlert] = useState(null);
@@ -65,7 +65,7 @@ const ProdutoTable = ({ mode }) => {
     return (
         <Card className="mb-3">
             <Card.Header>
-                <ProdutosTableHeader table tableMode={mode} refreshData={refreshData} />
+                <ProdutosTableHeader table tableMode={mode} refreshData={refreshData} title={title} />
             </Card.Header>
             <Card.Body className="p-0">
                 {

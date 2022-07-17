@@ -19,7 +19,7 @@ const Dashboard = () => {
 
       <Row className="g-3">
         <Col>
-          <ProdutoTable mode="ProdutoTableModeDashboard"></ProdutoTable>
+          <ProdutoTable mode="ProdutoTableModeDashboard" title="Produtos em falta"></ProdutoTable>
         </Col>
       </Row>
 
