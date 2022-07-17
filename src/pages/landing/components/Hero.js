@@ -1,3 +1,4 @@
+import './Hero.css';
 import TypeAnimation from 'react-type-animation';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,12 +21,6 @@ const Hero = () => {
       position="center bottom"
       overlay
     >
-      {/* <div className="position-relative light"> */}
-{/*         <Background video={[videoBg]} className="w-100" />  
- */}      {/*   <div className="position-relative vh-75 d-flex flex-center">
-          <h4 className="text-white">Video Background</h4>
-        </div>
-      </div>  */}
       <Row className="justify-content-center align-items-center pt-8 pt-lg-10 pb-lg-9 pb-xl-0">
         <Col
           md={12}
