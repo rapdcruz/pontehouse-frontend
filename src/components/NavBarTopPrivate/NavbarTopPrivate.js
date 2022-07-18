@@ -80,15 +80,14 @@ const NavbarTopPrivate = () => {
           <Nav navbar>
             <Fragment>
               <NavbarLabel label="Painel de abastecimento" />
-              <NavbarVerticalItem name="Dashboard" icon="fa-solid fa-chart-line" navigateTo="/private/admin/dashboard" > </NavbarVerticalItem>
               <NavbarVerticalItem name="Gestão de Produtos" icon="fa-solid fa-bars-progress" navigateTo="/private/gerirprodutos" > </NavbarVerticalItem>
-              <NavbarVerticalItem name="Histórico pessoal" icon="fa-solid fa-clock-rotate-left" navigateTo="/private/historico"> </NavbarVerticalItem>
 
               {
                 AuthenticationService.isAdminstrator() &&
                 <>
 
                   <NavbarLabel label="Administração" />
+                  <NavbarVerticalItem name="Dashboard" icon="fa-solid fa-chart-line" navigateTo="/private/admin/dashboard" > </NavbarVerticalItem>
                   <NavbarVerticalItem name="Lista de Utilizadores" icon="fa-solid fa-people-group" navigateTo="/private/admin/utilizador"> </NavbarVerticalItem>
                   <NavbarVerticalItem name="Lista de Produtos" icon="fa-solid fa-list" navigateTo="/private/admin/listarprodutos"> </NavbarVerticalItem>
                   <NavbarVerticalItem name="Histórico" icon="fa-solid fa-clock-rotate-left" navigateTo="/private/admin/historicogeral"> </NavbarVerticalItem>
@@ -97,7 +96,6 @@ const NavbarTopPrivate = () => {
 
               <NavbarLabel label="Informação" />
               <NavbarVerticalItem name="Sobre nós" icon="fa-solid fa-users" navigateTo="/private/sobre"> </NavbarVerticalItem>
-              <NavbarVerticalItem name="Faqs" icon="fa-solid fa-question-circle" navigateTo="/private/faqs"> </NavbarVerticalItem>
               <NavbarVerticalItem name="Contactos" icon="fa-solid fa-address-book" navigateTo="/private/contactos"> </NavbarVerticalItem>
             </Fragment>
           </Nav>
